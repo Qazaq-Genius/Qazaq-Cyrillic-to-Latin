@@ -1,0 +1,30 @@
+{
+  "name": "qazaq_genius/qazaq_cyrillic_to_latin",
+  "description": "Convert the Qazaq cyrillic script to one of the proposed latin scripts",
+  "keywords": [
+    "qazaq", "latyn", "kazakh", "latin", "cyrillic", "казахский", "transliterator",
+    "қазақша", "қазақ тілі", "qazaqşa", "qazaq tılı", "alphabet", "transliteration"
+  ],
+
+  "homepage": "https://github.com/Qazaq-Genius/Qazaq-Cyrillic-to-Latin",
+  "license": "MIT",
+  "type": "library",
+
+  "authors": [
+    {
+      "name": "tolik518",
+      "homepage": "https://github.com/tolik518"
+    }
+  ],
+
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+
+  "require-dev": {
+    "flyeralarm/php-code-validator": "^3.0.0",
+    "phpunit/phpunit": "^5.7"
+  }
+}
