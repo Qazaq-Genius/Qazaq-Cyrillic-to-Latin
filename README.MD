@@ -50,7 +50,9 @@ echo Qazaq::toLatin(ANTHEM_CYRILLIC);
 */
 ```
 
-If you want to use the official proposed version of 2021, you can just use the according constant.
+If you want to use the official proposed version of 2021 for example,
+instead of the most current version, you can just use the according constant.
+
 ```php
 Qazaq::toLatin("Алтын күн аспаны", Qazaq::OFFICIAL_LATIN_2021);
 //Output: Altyn kün aspany
