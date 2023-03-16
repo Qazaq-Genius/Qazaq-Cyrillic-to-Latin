@@ -59,6 +59,7 @@ class Transliterator
 
     /**
      * @param string $cyrillicQazaq
+     * @param const $mode
      * @return string
      */
     public static function toLatin($cyrillicQazaq, $mode = self::MOST_CURRENT)
