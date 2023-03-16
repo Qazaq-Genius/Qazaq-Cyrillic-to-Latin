@@ -1,7 +1,7 @@
 {
   "name": "qazaq_genius/qazaq_cyrillic_to_latin",
   "description": "Convert the Qazaq cyrillic script to one of the proposed latin scripts",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "keywords": [
     "qazaq", "latyn", "kazakh", "latin", "cyrillic", "казахский", "transliterator",
     "қазақша", "қазақ тілі", "qazaqşa", "qazaq tılı", "alphabet", "transliteration"
