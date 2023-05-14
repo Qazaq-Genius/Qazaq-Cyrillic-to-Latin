@@ -1,0 +1,15 @@
+name: Run Unit Tests
+on: [push]
+jobs:
+ Compile-GBA:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: make install
+
+      - name: Run Tests
+        run: make test
+
