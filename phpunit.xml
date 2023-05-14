@@ -20,7 +20,7 @@
             <directory suffix=".php">vendor</directory>
         </exclude>
         <report>
-            <clover outputFile="coverage/phpunit.coverage.xml"/>
+            <clover outputFile="coverage/clover.xml"/>
         </report>
     </coverage>
     <logging>

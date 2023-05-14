@@ -26,4 +26,5 @@ jobs:
           configuration: "phpunit.xml"
           version: 10.0.19
           php_version: 8.2
+          xdebug.mode: coverage
 
