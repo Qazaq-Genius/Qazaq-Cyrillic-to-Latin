@@ -10,13 +10,13 @@ jobs:
       - name: Install Dependencies
         run: make install
 
-       - name: PHPUnit Tests
-         uses: php-actions/phpunit@v3
-         with:
-           php_version: 5.6
+      - name: PHPUnit Tests
+        uses: php-actions/phpunit@v3
+        with:
+          php_version: 5.6
 
-       - name: PHPUnit Tests
-         uses: php-actions/phpunit@v3
-         with:
-           php_version: 8.2
+      - name: PHPUnit Tests
+        uses: php-actions/phpunit@v3
+        with:
+          php_version: 8.2
 
