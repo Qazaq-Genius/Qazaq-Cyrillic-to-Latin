@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          stderr="false"
-         verbose="true"
          colors="true"
-         cacheResultFile=".phpunit.result.cache">
-    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+         cacheResultFile=".phpunit.result.cache"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
     <php>
         <ini name="error_reporting" value="-1" />
         <ini name="xdebug.mode" value="coverage" />
@@ -13,8 +12,7 @@
     <testsuite name="default">
         <directory>tests</directory>
     </testsuite>
-    <coverage includeUncoveredFiles="false"
-              processUncoveredFiles="true">
+    <coverage includeUncoveredFiles="false">
         <include>
             <directory suffix=".php">src</directory>
         </include>
