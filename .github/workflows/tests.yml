@@ -21,6 +21,7 @@ jobs:
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v3
         with:
+          coverage_clover: "coverage/clover.xml"
           php_extensions: "xdebug"
           configuration: "phpunit.xml"
           version: 10.0.19
