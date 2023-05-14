@@ -1,0 +1,33 @@
+name: Run Unit Tests
+on: [push]
+jobs:
+ Run-Unit-Tests:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: make install
+
+      - name: PHPUnit Tests
+        uses: php-actions/phpunit@v3
+        with:
+          php_extensions: "xdebug"
+          configuration: "phpunit.xml"
+          version: 5.7.26
+          php_version: 5.6
+          args: --coverage-text
+        env:
+          XDEBUG_MODE: coverage
+
+      - name: PHPUnit Tests
+        uses: php-actions/phpunit@v3
+        with:
+          php_extensions: "xdebug"
+          configuration: "phpunit.xml"
+          version: 10.0.19
+          php_version: 8.2
+          args: --coverage-text
+        env:
+          XDEBUG_MODE: coverage
