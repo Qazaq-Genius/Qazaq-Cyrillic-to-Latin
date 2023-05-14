@@ -7,7 +7,7 @@ The official latin proposal from 2021 is implemented.
 You can install the package using [Composer](https://getcomposer.org/). Simply require the version you need:
 
 ```sh
-$ composer require gitonomy/gitlib
+$ composer require qazaq_genius/qazaq_cyrillic_to_latin
 ```
 
 Or just add it to your `composer.json` by hand
