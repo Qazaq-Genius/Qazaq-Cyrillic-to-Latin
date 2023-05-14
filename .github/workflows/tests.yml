@@ -17,14 +17,17 @@ jobs:
           configuration: "phpunit.xml"
           version: 5.7.26
           php_version: 5.6
+          args: --coverage-text
+        env:
+          XDEBUG_MODE: coverage
 
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v3
         with:
-          coverage_clover: "coverage/clover.xml"
           php_extensions: "xdebug"
           configuration: "phpunit.xml"
           version: 10.0.19
           php_version: 8.2
-          xdebug.mode: coverage
-
+          args: --coverage-text
+        env:
+          XDEBUG_MODE: coverage
